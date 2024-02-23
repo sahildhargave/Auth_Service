@@ -18,4 +18,4 @@ const prepareAndStartServer = () => {
 	})
 }
 
-prepareAndStartServer();
+prepareAndStartServer(); 
