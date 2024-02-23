@@ -52,7 +52,7 @@ class UserService{
 			 if(!isTokenVerified){
 				throw {error: 'Invaild token'}
 			 }
-			 const user = this.UserRepository.getById(response.id);
+			 const user =await this.UserRepository.getById(response.id);
 			 if (!user){
 				throw { error: 'No user with corresponding token exists'};
 			 }
