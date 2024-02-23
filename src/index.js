@@ -2,7 +2,6 @@ const express = require('express')
 const { PORT } =require('./config/serverConfig');
 const apiRoutes = require('./routes/index');
 const bodyParser = require('body-parser');
-//const {User} = require('./models/index');
 
 const app= express();
 
@@ -15,6 +14,7 @@ const prepareAndStartServer = () => {
 	app.listen(PORT, async() => {
 		console.log(`Server Started on ${PORT}`);
 		
+
 	})
 }
 
